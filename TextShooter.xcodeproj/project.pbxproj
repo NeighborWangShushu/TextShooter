@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7949D5711C357D180049FF50 /* EnemyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7949D5701C357D180049FF50 /* EnemyNode.m */; };
+		794C24971C3411A80059BC93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C24961C3411A80059BC93 /* main.m */; };
+		794C249A1C3411A80059BC93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C24991C3411A80059BC93 /* AppDelegate.m */; };
+		794C249D1C3411A80059BC93 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C249C1C3411A80059BC93 /* GameScene.m */; };
+		794C249F1C3411A80059BC93 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 794C249E1C3411A80059BC93 /* GameScene.sks */; };
+		794C24A21C3411A90059BC93 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C24A11C3411A90059BC93 /* GameViewController.m */; };
+		794C24A51C3411A90059BC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794C24A31C3411A90059BC93 /* Main.storyboard */; };
+		794C24A71C3411A90059BC93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794C24A61C3411A90059BC93 /* Images.xcassets */; };
+		794C24AA1C3411A90059BC93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794C24A81C3411A90059BC93 /* LaunchScreen.xib */; };
+		794C24B61C3411A90059BC93 /* TextShooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 794C24B51C3411A90059BC93 /* TextShooterTests.m */; };
+		796B00851C39272D0042E90A /* shoot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 796B00841C39272D0042E90A /* shoot.mp3 */; };
+		79C4243E1C37A930002CDBA7 /* BulletNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C4243D1C37A930002CDBA7 /* BulletNode.m */; };
+		79C424411C37D4CB002CDBA7 /* SKNode+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C424401C37D4CB002CDBA7 /* SKNode+Extra.m */; };
+		79C78D321C38FBF3004B84C2 /* MissileExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D301C38FBF3004B84C2 /* MissileExplosion.sks */; };
+		79C78D331C38FBF3004B84C2 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D311C38FBF3004B84C2 /* spark.png */; };
+		79C78D351C38FE73004B84C2 /* EnemyExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D341C38FE73004B84C2 /* EnemyExplosion.sks */; };
+		79C78D3E1C39060B004B84C2 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C78D3D1C39060B004B84C2 /* GameOverScene.m */; };
+		79C78D411C390734004B84C2 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C78D401C390734004B84C2 /* StartScene.m */; };
+		79C78D541C3910C9004B84C2 /* enemyHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D4F1C3910C9004B84C2 /* enemyHit.wav */; };
+		79C78D551C3910C9004B84C2 /* gameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D501C3910C9004B84C2 /* gameOver.wav */; };
+		79C78D561C3910C9004B84C2 /* gameStart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D511C3910C9004B84C2 /* gameStart.wav */; };
+		79C78D571C3910C9004B84C2 /* playerHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D521C3910C9004B84C2 /* playerHit.wav */; };
+		79C78D601C391D5E004B84C2 /* shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79C78D5F1C391D5E004B84C2 /* shoot.wav */; };
+		79D331901C34B29B00ECADDA /* PlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D3318F1C34B29B00ECADDA /* PlayerNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		794C24B01C3411A90059BC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 794C24891C3411A80059BC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794C24901C3411A80059BC93;
+			remoteInfo = TextShooter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7949D56E1C3569470049FF50 /* Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		7949D56F1C357D180049FF50 /* EnemyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyNode.h; sourceTree = "<group>"; };
+		7949D5701C357D180049FF50 /* EnemyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyNode.m; sourceTree = "<group>"; };
+		794C24911C3411A80059BC93 /* TextShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		794C24951C3411A80059BC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794C24961C3411A80059BC93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		794C24981C3411A80059BC93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		794C24991C3411A80059BC93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		794C249B1C3411A80059BC93 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		794C249C1C3411A80059BC93 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		794C249E1C3411A80059BC93 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		794C24A01C3411A90059BC93 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		794C24A11C3411A90059BC93 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		794C24A41C3411A90059BC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794C24A61C3411A90059BC93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		794C24A91C3411A90059BC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		794C24AF1C3411A90059BC93 /* TextShooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextShooterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		794C24B41C3411A90059BC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794C24B51C3411A90059BC93 /* TextShooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextShooterTests.m; sourceTree = "<group>"; };
+		796B00841C39272D0042E90A /* shoot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoot.mp3; sourceTree = "<group>"; };
+		79C4243B1C37A197002CDBA7 /* PhysicsCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsCategories.h; sourceTree = "<group>"; };
+		79C4243C1C37A930002CDBA7 /* BulletNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletNode.h; sourceTree = "<group>"; };
+		79C4243D1C37A930002CDBA7 /* BulletNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletNode.m; sourceTree = "<group>"; };
+		79C4243F1C37D4CB002CDBA7 /* SKNode+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+Extra.h"; sourceTree = "<group>"; };
+		79C424401C37D4CB002CDBA7 /* SKNode+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+Extra.m"; sourceTree = "<group>"; };
+		79C78D301C38FBF3004B84C2 /* MissileExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MissileExplosion.sks; sourceTree = "<group>"; };
+		79C78D311C38FBF3004B84C2 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		79C78D341C38FE73004B84C2 /* EnemyExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EnemyExplosion.sks; sourceTree = "<group>"; };
+		79C78D3C1C39060B004B84C2 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		79C78D3D1C39060B004B84C2 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		79C78D3F1C390734004B84C2 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
+		79C78D401C390734004B84C2 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		79C78D4F1C3910C9004B84C2 /* enemyHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = enemyHit.wav; sourceTree = "<group>"; };
+		79C78D501C3910C9004B84C2 /* gameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameOver.wav; sourceTree = "<group>"; };
+		79C78D511C3910C9004B84C2 /* gameStart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameStart.wav; sourceTree = "<group>"; };
+		79C78D521C3910C9004B84C2 /* playerHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = playerHit.wav; sourceTree = "<group>"; };
+		79C78D5F1C391D5E004B84C2 /* shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shoot.wav; sourceTree = "<group>"; };
+		79D3318E1C34B29B00ECADDA /* PlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerNode.h; sourceTree = "<group>"; };
+		79D3318F1C34B29B00ECADDA /* PlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794C248E1C3411A80059BC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794C24AC1C3411A90059BC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794C24881C3411A80059BC93 = {
+			isa = PBXGroup;
+			children = (
+				794C24931C3411A80059BC93 /* TextShooter */,
+				794C24B21C3411A90059BC93 /* TextShooterTests */,
+				794C24921C3411A80059BC93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		794C24921C3411A80059BC93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				794C24911C3411A80059BC93 /* TextShooter.app */,
+				794C24AF1C3411A90059BC93 /* TextShooterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794C24931C3411A80059BC93 /* TextShooter */ = {
+			isa = PBXGroup;
+			children = (
+				796B00841C39272D0042E90A /* shoot.mp3 */,
+				794C24981C3411A80059BC93 /* AppDelegate.h */,
+				794C24991C3411A80059BC93 /* AppDelegate.m */,
+				794C249B1C3411A80059BC93 /* GameScene.h */,
+				794C249C1C3411A80059BC93 /* GameScene.m */,
+				79C78D301C38FBF3004B84C2 /* MissileExplosion.sks */,
+				79C78D341C38FE73004B84C2 /* EnemyExplosion.sks */,
+				79C78D311C38FBF3004B84C2 /* spark.png */,
+				79C4243F1C37D4CB002CDBA7 /* SKNode+Extra.h */,
+				79C424401C37D4CB002CDBA7 /* SKNode+Extra.m */,
+				79C4243B1C37A197002CDBA7 /* PhysicsCategories.h */,
+				79C4243C1C37A930002CDBA7 /* BulletNode.h */,
+				79C4243D1C37A930002CDBA7 /* BulletNode.m */,
+				794C249E1C3411A80059BC93 /* GameScene.sks */,
+				794C24A01C3411A90059BC93 /* GameViewController.h */,
+				794C24A11C3411A90059BC93 /* GameViewController.m */,
+				79D3318E1C34B29B00ECADDA /* PlayerNode.h */,
+				79D3318F1C34B29B00ECADDA /* PlayerNode.m */,
+				7949D56F1C357D180049FF50 /* EnemyNode.h */,
+				7949D5701C357D180049FF50 /* EnemyNode.m */,
+				79C78D3C1C39060B004B84C2 /* GameOverScene.h */,
+				79C78D3D1C39060B004B84C2 /* GameOverScene.m */,
+				79C78D3F1C390734004B84C2 /* StartScene.h */,
+				79C78D401C390734004B84C2 /* StartScene.m */,
+				7949D56E1C3569470049FF50 /* Geometry.h */,
+				794C24A31C3411A90059BC93 /* Main.storyboard */,
+				794C24A61C3411A90059BC93 /* Images.xcassets */,
+				794C24A81C3411A90059BC93 /* LaunchScreen.xib */,
+				794C24941C3411A80059BC93 /* Supporting */,
+			);
+			path = TextShooter;
+			sourceTree = "<group>";
+		};
+		794C24941C3411A80059BC93 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				79C78D5F1C391D5E004B84C2 /* shoot.wav */,
+				79C78D4F1C3910C9004B84C2 /* enemyHit.wav */,
+				79C78D501C3910C9004B84C2 /* gameOver.wav */,
+				79C78D511C3910C9004B84C2 /* gameStart.wav */,
+				79C78D521C3910C9004B84C2 /* playerHit.wav */,
+				794C24951C3411A80059BC93 /* Info.plist */,
+				794C24961C3411A80059BC93 /* main.m */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		794C24B21C3411A90059BC93 /* TextShooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				794C24B51C3411A90059BC93 /* TextShooterTests.m */,
+				794C24B31C3411A90059BC93 /* Supporting Files */,
+			);
+			path = TextShooterTests;
+			sourceTree = "<group>";
+		};
+		794C24B31C3411A90059BC93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				794C24B41C3411A90059BC93 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		794C24901C3411A80059BC93 /* TextShooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794C24B91C3411A90059BC93 /* Build configuration list for PBXNativeTarget "TextShooter" */;
+			buildPhases = (
+				794C248D1C3411A80059BC93 /* Sources */,
+				794C248E1C3411A80059BC93 /* Frameworks */,
+				794C248F1C3411A80059BC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextShooter;
+			productName = TextShooter;
+			productReference = 794C24911C3411A80059BC93 /* TextShooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		794C24AE1C3411A90059BC93 /* TextShooterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794C24BC1C3411A90059BC93 /* Build configuration list for PBXNativeTarget "TextShooterTests" */;
+			buildPhases = (
+				794C24AB1C3411A90059BC93 /* Sources */,
+				794C24AC1C3411A90059BC93 /* Frameworks */,
+				794C24AD1C3411A90059BC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				794C24B11C3411A90059BC93 /* PBXTargetDependency */,
+			);
+			name = TextShooterTests;
+			productName = TextShooterTests;
+			productReference = 794C24AF1C3411A90059BC93 /* TextShooterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		794C24891C3411A80059BC93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = WB;
+				TargetAttributes = {
+					794C24901C3411A80059BC93 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					794C24AE1C3411A90059BC93 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 794C24901C3411A80059BC93;
+					};
+				};
+			};
+			buildConfigurationList = 794C248C1C3411A80059BC93 /* Build configuration list for PBXProject "TextShooter" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 794C24881C3411A80059BC93;
+			productRefGroup = 794C24921C3411A80059BC93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				794C24901C3411A80059BC93 /* TextShooter */,
+				794C24AE1C3411A90059BC93 /* TextShooterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		794C248F1C3411A80059BC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794C24AA1C3411A90059BC93 /* LaunchScreen.xib in Resources */,
+				79C78D561C3910C9004B84C2 /* gameStart.wav in Resources */,
+				79C78D331C38FBF3004B84C2 /* spark.png in Resources */,
+				79C78D321C38FBF3004B84C2 /* MissileExplosion.sks in Resources */,
+				79C78D541C3910C9004B84C2 /* enemyHit.wav in Resources */,
+				794C24A71C3411A90059BC93 /* Images.xcassets in Resources */,
+				79C78D351C38FE73004B84C2 /* EnemyExplosion.sks in Resources */,
+				79C78D551C3910C9004B84C2 /* gameOver.wav in Resources */,
+				796B00851C39272D0042E90A /* shoot.mp3 in Resources */,
+				794C249F1C3411A80059BC93 /* GameScene.sks in Resources */,
+				79C78D571C3910C9004B84C2 /* playerHit.wav in Resources */,
+				79C78D601C391D5E004B84C2 /* shoot.wav in Resources */,
+				794C24A51C3411A90059BC93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794C24AD1C3411A90059BC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		794C248D1C3411A80059BC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C78D3E1C39060B004B84C2 /* GameOverScene.m in Sources */,
+				794C24A21C3411A90059BC93 /* GameViewController.m in Sources */,
+				79C4243E1C37A930002CDBA7 /* BulletNode.m in Sources */,
+				794C249A1C3411A80059BC93 /* AppDelegate.m in Sources */,
+				7949D5711C357D180049FF50 /* EnemyNode.m in Sources */,
+				79C424411C37D4CB002CDBA7 /* SKNode+Extra.m in Sources */,
+				794C249D1C3411A80059BC93 /* GameScene.m in Sources */,
+				794C24971C3411A80059BC93 /* main.m in Sources */,
+				79D331901C34B29B00ECADDA /* PlayerNode.m in Sources */,
+				79C78D411C390734004B84C2 /* StartScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794C24AB1C3411A90059BC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794C24B61C3411A90059BC93 /* TextShooterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		794C24B11C3411A90059BC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794C24901C3411A80059BC93 /* TextShooter */;
+			targetProxy = 794C24B01C3411A90059BC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		794C24A31C3411A90059BC93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794C24A41C3411A90059BC93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		794C24A81C3411A90059BC93 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				794C24A91C3411A90059BC93 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		794C24B71C3411A90059BC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		794C24B81C3411A90059BC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		794C24BA1C3411A90059BC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		794C24BB1C3411A90059BC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextShooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		794C24BD1C3411A90059BC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextShooterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextShooter.app/TextShooter";
+			};
+			name = Debug;
+		};
+		794C24BE1C3411A90059BC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TextShooterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextShooter.app/TextShooter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		794C248C1C3411A80059BC93 /* Build configuration list for PBXProject "TextShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794C24B71C3411A90059BC93 /* Debug */,
+				794C24B81C3411A90059BC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794C24B91C3411A90059BC93 /* Build configuration list for PBXNativeTarget "TextShooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794C24BA1C3411A90059BC93 /* Debug */,
+				794C24BB1C3411A90059BC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794C24BC1C3411A90059BC93 /* Build configuration list for PBXNativeTarget "TextShooterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794C24BD1C3411A90059BC93 /* Debug */,
+				794C24BE1C3411A90059BC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 794C24891C3411A80059BC93 /* Project object */;
+}
