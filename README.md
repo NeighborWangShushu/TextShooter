@@ -1,2 +1,2 @@
 # TextShooter
-利用Sprite Kit做的一个简单的设计游戏
+利用Sprite Kit做的一个简单的射击游戏
